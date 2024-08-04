@@ -1,8 +1,7 @@
-
-module.exports = function towelSort(matrix) {
+function towelSort(matrix) {
 
   let result = [];
-  if (!matrix || !Array.isArray(matrix) || matrix.length === 0) {
+  if (!Array.isArray(matrix) || matrix.length === 0) {
     return result;
   }
   for (let i = 0; i < matrix.length; i++) {
@@ -15,3 +14,8 @@ module.exports = function towelSort(matrix) {
   return result;
 }
 
+console.log(towelSort([
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+]));  
